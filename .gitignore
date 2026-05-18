@@ -1,0 +1,35 @@
+# 1. Dependency folders (Inhe kabhi push nahi karna, ye bhot heavy hote hain)
+node_modules/
+
+# 2. Build output (Jo `ng build` karne par dist folder banta hai, use push nahi karte)
+dist/
+/bazel-out
+
+# 3. IDEs and Editors (Tumhare VS Code ya WebStorm ki personal settings)
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 4. Local environment files (Agar tumne secrets/passwords rakhe hain)
+.env
+.env.local
+
+# 5. OS Generated files (Mac aur Windows ke faltu temporary kachra files)
+.DS_Store
+Thumbs.db
+
+# 6. Log files (NPM ke error logs)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/logs
+
+# 7. Angular cache folder (Angular 13+ me banta hai speed badhane ke liye, push mat karna)
+.angular/
+
+# Ignore package-lock.json
+package-lock.json
